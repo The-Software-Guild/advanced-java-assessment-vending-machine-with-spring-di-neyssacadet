@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Component
+
 public class Controller {
     private VendingMachineUserIO io = new VendingMachineUserIOImpl();
     private VendingMachineView view;
@@ -24,7 +24,7 @@ public class Controller {
     private VendingMachineService service;
     BigDecimal moneyDeposit = new BigDecimal(0);
 
-    @Autowired
+
     public Controller(VendingMachineView view, VendingMachineService service) {
         this.service = service;
         this.view = view;

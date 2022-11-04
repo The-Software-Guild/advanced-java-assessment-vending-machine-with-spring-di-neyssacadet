@@ -15,12 +15,12 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@Component
+
 public class VendingMachineServiceImpl implements VendingMachineService {
     private final VendingMachineDao dao;
     private final VendingMachineAuditDao auditDao;
 
-    @Autowired
+
     public VendingMachineServiceImpl(VendingMachineDao dao, VendingMachineAuditDao auditDao) {
         this.dao = dao;
         this.auditDao = auditDao;

@@ -2,16 +2,17 @@ package com.sg.VendingMachine.ui;
 
 import com.sg.VendingMachine.dto.Change;
 import com.sg.VendingMachine.dto.Item;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-@Component
+
 public class VendingMachineView {
-    @Autowired
-    private VendingMachineUserIO io = new VendingMachineUserIOImpl();
+    private VendingMachineUserIO io;
+
+    public VendingMachineView(VendingMachineUserIO io){
+        this.io = io;
+    }
 
     public int printMenuAndGetSelection() {
         io.print("===Main Menu===");

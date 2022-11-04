@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Component
+
 public class VendingMachineDaoImpl implements VendingMachineDao {
     VendingMachineAuditDao audit = new VendingMachineAuditDaoImpl();
     //map where items are stored

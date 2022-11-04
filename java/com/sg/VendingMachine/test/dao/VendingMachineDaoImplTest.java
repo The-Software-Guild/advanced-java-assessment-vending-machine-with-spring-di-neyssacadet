@@ -4,7 +4,10 @@ import com.sg.VendingMachine.dao.VendingMachineDao;
 import com.sg.VendingMachine.dao.VendingMachineDaoImpl;
 import com.sg.VendingMachine.dao.VendingMachinePersistenceException;
 import com.sg.VendingMachine.dto.Item;
+import com.sg.VendingMachine.service.VendingMachineService;
 import org.junit.jupiter.api.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,6 +21,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VendingMachineDaoImplTest {
     VendingMachineDao testDao;
+
+
     @BeforeAll
     public static void setUpItem() {
     }

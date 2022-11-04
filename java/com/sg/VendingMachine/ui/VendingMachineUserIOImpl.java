@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-@Component
+
 public class VendingMachineUserIOImpl implements VendingMachineUserIO {
     final private Scanner scan = new Scanner(System.in);
 

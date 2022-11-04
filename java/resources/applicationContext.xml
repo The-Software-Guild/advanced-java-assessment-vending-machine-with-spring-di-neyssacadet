@@ -28,12 +28,12 @@
 
     <bean id="service"
           class="com.sg.VendingMachine.service.VendingMachineServiceImpl">
-        <constructor-arg ref="VendingMachineDaoStubImpl" />
-        <constructor-arg ref="VendingMachineAuditDaoStubImpl" />
+        <constructor-arg ref="dao" />
+        <constructor-arg ref="auditDao" />
     </bean>
 
-    <bean id="controller" class="com.sg.VendingMachine.controller.Controller">
-        <constructor-arg ref="service" />
+    <bean id="controller" class="com.sg.VendingMachine.Controller.Controller">
         <constructor-arg ref="view" />
+        <constructor-arg ref="service" />
     </bean>
 </beans>
