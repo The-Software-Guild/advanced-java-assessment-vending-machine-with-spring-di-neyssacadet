@@ -12,7 +12,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.math.BigDecimal;
-
+//updated the app to use springDI
 public class App {
     public static void main(String[] args) throws VendingMachinePersistenceException, VendingMachineInsufficientFundsException, VendingMachineNoItemInventoryException {
         /*VendingMachineDao myDao = new VendingMachineDaoImpl();
